@@ -1,19 +1,26 @@
 <!--------@/index.html--------------------------------------------------------->
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Shortcut Panel</title>
     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
 </head>
 <body>
     <!-- Execute Go binary and display standard output -->
     <div class="container">
-        <button id="testButton" class="action-button">Click Me!</button>
-        <div id="messageBox" class="message"></div>
-
+        
+        <button id="textButton" class="action-button">Run Go Program</button>
+        <div id="goProgramOutput" class="message"></div>
+        
         <button id="listFilesButton" class="action-button">List Files</button>
-        <div id="fileList" class="message"></div>
+        <div id="fileListOutput" class="message"></div>
+        
+        <button id="listFilesGoButton" class="action-button">List Files (Go)</button>
+        <div id="fileListGoOutput" class="message"></div>
+
     </div>
     <script src="script.js"></script>
 </body>

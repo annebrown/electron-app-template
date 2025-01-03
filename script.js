@@ -1,30 +1,37 @@
 //--------@/script.js---------------------------------------------------------->
-// Listen for button click
-document.getElementById('testButton').addEventListener('click', async () => {
-  const messageBox = document.getElementById('messageBox');
-  try {
-      console.log('Button clicked');
-      const output = await window.electronAPI.invokeGoProgram();
-      console.log('Output received:', output);
-      messageBox.textContent = `Go Program Output: ${output}`;
-  } catch (error) {
-      console.error('Error:', error);
-      messageBox.textContent = `Error calling Go program: ${error}`;
-  }
-});
+// Listen for button clicks
 
-document.getElementById('listFilesButton').addEventListener('click', async () => {
-    const fileList = document.getElementById('fileList');
+// textButton 
+document.getElementById('textButton').addEventListener('click', async () => {
+    const goProgramOutput = document.getElementById('goProgramOutput');
     try {
-        console.log('List Files button clicked');
-        const files = await window.electronAPI.listFiles();
-        console.log('Files received:', files);
-        fileList.textContent = `Files: ${files.join(', ')}`;
+        const result = await window.electronAPI.invokeGoProgram();
+        goProgramOutput.textContent = `Go Program Output: ${result}`;
     } catch (error) {
-        console.error('Error:', error);
-        fileList.textContent = `Error listing files: ${error}`;
+        goProgramOutput.textContent = `Error: ${error}`;
     }
 });
 
+// listFilesButton
+document.getElementById('listFilesButton').addEventListener('click', async () => {
+    const fileListOutput = document.getElementById('fileListOutput');
+    try {
+        const files = await window.electronAPI.listFiles();
+        fileListOutput.textContent = `Files: ${files.join(', ')}`;
+    } catch (error) {
+        fileListOutput.textContent = `Error listing files: ${error}`;
+    }
+});
+
+// ListFilesgoButton
+document.getElementById('listFilesGoButton').addEventListener('click', async () => {
+    const fileListGoOutput = document.getElementById('fileListGoOutput');
+    try {
+        const files = await window.electronAPI.invokeListFilesGo();
+        fileListGoOutput.textContent = `Files: ${files.join(', ')}`;
+    } catch (error) {
+        fileListGoOutput.textContent = `Error listing files: ${error}`;
+    }
+});
 console.log('script.js loaded');
 //--------@/script.js---------------------------------------------------------->
