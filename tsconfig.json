@@ -1,0 +1,15 @@
+//--------@/tsconfig.json------------------------------------------------------>
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "outDir": "dist"
+    },
+    "include": ["**/*.ts", "dist/preload.js"],
+    "exclude": ["node_modules"]
+  }
+//--------@/tsconfig.json------------------------------------------------------>
