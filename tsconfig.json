@@ -9,7 +9,7 @@
       "strict": true,
       "outDir": "dist"
     },
-    "include": ["**/*.ts", "dist/preload.js"],
+    "include": ["**/*.ts", "dist/preload.js", "preload.ts"],
     "exclude": ["node_modules"]
   }
 //--------@/tsconfig.json------------------------------------------------------>

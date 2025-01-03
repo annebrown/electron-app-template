@@ -6,6 +6,7 @@
   "scripts": {
     "start": "pnpm exec tsc && electron ./dist/main.js",
     "dev": "pnpm exec tsc -w & electron ./dist/main.js",
+    "build": "pnpm exec tsc",
     "package": "electron-packager . app --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds --asar=true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

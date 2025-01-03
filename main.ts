@@ -43,4 +43,16 @@ ipcMain.handle('invoke-go-program', async () => {
         });
     });
 });
+
+import { readdir } from 'fs/promises';
+
+ipcMain.handle('list-files', async () => {
+    try {
+        const files = await readdir('.');
+        return files;
+    } catch (error) {
+        console.error(`readdir error: ${error}`);
+        throw error;
+    }
+});
 //--------@/main.ts------------------------------------------------------------>
