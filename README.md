@@ -2,21 +2,23 @@
 
 ## Purpose
 
-Template for Simple Electron App
+Template for snippets and starter app
 
 ## Description
 
-Simple Electron app with a simple button IF 
+Simple Electron app with buttons IF
 
-## First button
+## Button Actions
 
-Calls a compiled Go program on button click, and renders the
-Go program standard output to an Alert Message in the Electron App.
+## Simple Go Program
 
-## Second Button
+Invoke compiled Go program and render standard output
 
-Lists files in cwd using Node.js's `fs` module, and renders the result.
+## OS Access
+
+Lists files in cwd using Node.js's `fs` module, and render output.
 
 ## Third Button
 
-Lists cwd files using a Go binary
+Lists cwd files using a Go binary, render output
+

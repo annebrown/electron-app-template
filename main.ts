@@ -73,7 +73,7 @@ ipcMain.handle('list-files', async () => {
 
 ipcMain.handle('invoke-list-files-go', async () => {
     return new Promise((resolve, reject) => {
-        const listFilesPath = path.join(__dirname, '../listFiles');
+        const listFilesPath = path.join(__dirname, '../listFiles/listFiles');
         console.log(`Executing: ${listFilesPath}`);
         fs.access(listFilesPath, fs.constants.X_OK, (err) => {
             if (err) {
