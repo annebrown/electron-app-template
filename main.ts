@@ -1,4 +1,4 @@
-//--------@/main.ts------------------------------------------------------------>
+//<--------@/main.ts----------------------------------------------------------->
 // filepath: /home/anne/electron/electron-app-template/electron-app-template/main.ts
 import { app, BrowserWindow, ipcMain } from 'electron';
 import { exec } from 'child_process';
@@ -98,4 +98,4 @@ ipcMain.handle('invoke-list-files-go', async () => {
         });
     });
 });
-//--------@/main.ts------------------------------------------------------------>
+//<--------@/main.ts----------------------------------------------------------->

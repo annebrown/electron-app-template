@@ -1,7 +1,7 @@
 {
     "name": "electron-app-template",
     "version": "1.0.0",
-    "description": "Keyboard Shortcut Panel",
+    "description": "Template for snippets and starter app",
     "main": "dist/main.js",
     "scripts": {
       "start": "pnpm exec tsc && electron .",

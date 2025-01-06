@@ -10,14 +10,14 @@ Simple Electron app with buttons IF
 
 ## Button Actions
 
-## Simple Go Program
+### Simple Go Binary
 
 Invoke compiled Go program and render standard output below button.
 
-## OS Access
+### OS Access
 
 List files in CWD using Node.js's `fs` module and render output.
 
-## Third Button
+### GO OS Access
 
 List CWD using Go binary and render output

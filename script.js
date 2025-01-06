@@ -1,4 +1,4 @@
-//--------@/script.js---------------------------------------------------------->
+//<--------@/script.js--------------------------------------------------------->
 // Listen for button clicks
 
 // textButton 
@@ -34,4 +34,4 @@ document.getElementById('listFilesGoButton').addEventListener('click', async () 
     }
 });
 console.log('script.js loaded');
-//--------@/script.js---------------------------------------------------------->
+//<--------@/script.js--------------------------------------------------------->

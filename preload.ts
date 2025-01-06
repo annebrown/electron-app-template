@@ -1,4 +1,4 @@
-//--------@/preload.ts--------------------------------------------------------->
+//<--------@/preload.ts-------------------------------------------------------->
 import { contextBridge, ipcRenderer } from 'electron';
 
 contextBridge.exposeInMainWorld('electronAPI', {
@@ -6,4 +6,4 @@ contextBridge.exposeInMainWorld('electronAPI', {
     listFiles: () => ipcRenderer.invoke('list-files'),
     invokeListFilesGo: () => ipcRenderer.invoke('invoke-list-files-go')
 });
-//--------@/preload.ts--------------------------------------------------------->
+//<--------@/preload.ts-------------------------------------------------------->
