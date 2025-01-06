@@ -12,13 +12,12 @@ Simple Electron app with buttons IF
 
 ## Simple Go Program
 
-Invoke compiled Go program and render standard output
+Invoke compiled Go program and render standard output below button.
 
 ## OS Access
 
-Lists files in cwd using Node.js's `fs` module, and render output.
+List files in CWD using Node.js's `fs` module and render output.
 
 ## Third Button
 
-Lists cwd files using a Go binary, render output
-
+List CWD using Go binary and render output
